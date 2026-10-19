@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+# ==============================================================================
+#  OMNI — Open-Source Multi-Device Command & Control Center
+#  Author: Jordan Isaac (dragpk247)
+# ==============================================================================
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/omni-core.sh"
+
+CURRENT_DEVICE=$(omni_detect_device)
+
+case "${1:-}" in
+  --phone|phone-ui)
+    exec "$SCRIPT_DIR/omni-phone"
+    ;;
+  --laptop|laptop-ui)
+    exec "$SCRIPT_DIR/omni-laptop"
+    ;;
+  --desktop|desktop-ui)
+    exec "$SCRIPT_DIR/omni-desktop"
+    ;;
+  setup|--setup)
+    omni_run_setup
+    exit 0
+    ;;
+  send)
+    shift
+    exec "$SCRIPT_DIR/omni-send" "$@"
+    ;;
+  ""|menu)
+    case "$CURRENT_DEVICE" in
+      phone) exec "$SCRIPT_DIR/omni-phone" ;;
+      laptop) exec "$SCRIPT_DIR/omni-laptop" ;;
+      desktop) exec "$SCRIPT_DIR/omni-desktop" ;;
+      *) exec "$SCRIPT_DIR/omni-desktop" ;;
+    esac
+    ;;
+  help|-h|--help)
+    echo "OMNI — Intelligent Multi-Device Command Center"
+    echo "Device detected: $CURRENT_DEVICE"
+    echo "Usage: omni [menu|send|setup|--phone|--laptop|--desktop]"
+    echo "       omni <command> (e.g. omni send file.txt, omni setup)"
+    exit 0
+    ;;
+  ask)
+    shift
+    if [ -f "$HOME/bin/ask" ]; then
+      "$HOME/bin/ask" "$@"
+    else
+      echo "Ask copilot is configured on phone."
+    fi
+    ;;
+  clip-ask)
+    [ -f "$HOME/bin/clip-ask" ] && "$HOME/bin/clip-ask"
+    ;;
+  clip-run)
+    [ -f "$HOME/bin/clip-run" ] && "$HOME/bin/clip-run"
+    ;;
+  guard)
+    [ -f "$HOME/bin/smart-guard.sh" ] && "$HOME/bin/smart-guard.sh" && echo "🛡️ Battery & Thermals: SAFE"
+    ;;
+  *)
+    case "$CURRENT_DEVICE" in
+      phone) exec "$SCRIPT_DIR/omni-phone" ;;
+      laptop) exec "$SCRIPT_DIR/omni-laptop" ;;
+      desktop) exec "$SCRIPT_DIR/omni-desktop" ;;
+    esac
+    ;;
+esac

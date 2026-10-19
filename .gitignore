@@ -1,0 +1,7 @@
+# OMNI User Configs (Never commit secrets or personal IPs)
+config.env
+*.env
+*.local
+.omni_state
+*.log
+.cache/
