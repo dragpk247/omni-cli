@@ -1,0 +1,50 @@
+{
+  "bin/omni": {
+    "mtime": 1792449270.0669072,
+    "seen": 1792449301.8200326,
+    "ast_hash": "16a2b75819cafcc43e107e59058a7be8",
+    "semantic_hash": ""
+  },
+  "bin/omni-core.sh": {
+    "mtime": 1792449226.034464,
+    "seen": 1792449301.8200357,
+    "ast_hash": "0c6fca5e5941810a17ffeddadbf736a4",
+    "semantic_hash": ""
+  },
+  "bin/omni-desktop": {
+    "mtime": 1792449270.0651567,
+    "seen": 1792449301.8200374,
+    "ast_hash": "b0b7de53429862f7f0b5c40e9c9e031d",
+    "semantic_hash": ""
+  },
+  "bin/omni-laptop": {
+    "mtime": 1792449270.0642703,
+    "seen": 1792449301.8200383,
+    "ast_hash": "afc76214b8087fd7adfac0613e60c502",
+    "semantic_hash": ""
+  },
+  "bin/omni-phone": {
+    "mtime": 1792449239.98353,
+    "seen": 1792449301.8200393,
+    "ast_hash": "638e1a6d7b8a6c94d42a409805d883f9",
+    "semantic_hash": ""
+  },
+  "bin/omni-send": {
+    "mtime": 1792449270.066138,
+    "seen": 1792449301.8200397,
+    "ast_hash": "637b5c456b118989b64d24f728e3e98e",
+    "semantic_hash": ""
+  },
+  "install.sh": {
+    "mtime": 1792449277.1598763,
+    "seen": 1792449301.8200402,
+    "ast_hash": "889afcee1a4ee3b1076ee71c100dadf2",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792449294.4044466,
+    "seen": 1792449301.8200407,
+    "ast_hash": "2534beefead8ad694e9a3359544ab30b",
+    "semantic_hash": ""
+  }
+}

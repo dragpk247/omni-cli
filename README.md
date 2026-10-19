@@ -16,7 +16,10 @@ License: **MIT**
   - 💻 **Portable Workstation (`omni-laptop`)**: Low-latency Moonlight streaming, remote desktop AI execution, and phone screen mirroring.
   - 🖥️ **Master Desktop (`omni-desktop`)**: Local AI orchestration (Antigravity, Claude Code, Aider, Jev), RTX GPU telemetry, and remote fleet management.
 - **📁 3-Way "AirDrop" Transfer (`omni send`)**: Instantly send files and folders across Desktop $\leftrightarrow$ Laptop $\leftrightarrow$ Phone over Tailscale with native push notifications.
-- **📋 Mobile Clipboard Intelligence**: Send text/errors directly to LLMs (`clip-ask`) or preview and run copied bash snippets safely (`clip-run`).
+- **📋 Universal Clipboard Sync (`omni clip`)**: Push or pull clipboards across Wayland desktop/laptop and Android Termux.
+- **🎙️ Voice Copilot (`omni voice`)**: Hands-free speech-to-text input with spoken audio AI responses on S24.
+- **🔔 Cross-Device Notification Relay (`omni notify`)**: Send push notifications to your phone's notification shade when long builds or AI commands finish.
+- **🔍 Fuzzy Action Launcher (`omni -f`)**: Interactive real-time search launcher for every tool and action.
 - **🛡️ Thermal & Battery Sentinel**: Circuit-breaker that halts heavy tasks when battery is low or device is hot.
 - **🔒 Privacy First**: Zero hardcoded IP addresses, credentials, or private keys in the codebase. All endpoints are configured via `~/.config/omni/config.env`.
 
