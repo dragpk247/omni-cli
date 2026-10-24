@@ -1,37 +1,37 @@
 {
   "bin/omni": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6996908,
-    "ast_hash": "705d830a519dda9c10d192fe1984d374",
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.769353,
+    "ast_hash": "4ac52f81c27fcb54066392e8c98450cf",
     "semantic_hash": ""
   },
   "bin/omni-core.sh": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.699696,
-    "ast_hash": "29272e87ca8eca40d430adf0dcadb94c",
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693584,
+    "ast_hash": "bd2d0e84ab37538c86b5c303871f6d51",
     "semantic_hash": ""
   },
   "bin/omni-desktop": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6996973,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.769359,
     "ast_hash": "f61d2ec370804a653c15e769a1261298",
     "semantic_hash": ""
   },
   "bin/omni-laptop": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6996982,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693603,
     "ast_hash": "50046a0cc9300159301727d288933d7a",
     "semantic_hash": ""
   },
   "bin/omni-phone": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6997015,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693632,
     "ast_hash": "e6c5fdf36e219cd61dbd27cf2d0b3083",
     "semantic_hash": ""
   },
   "bin/omni-send": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6997023,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693639,
     "ast_hash": "637b5c456b118989b64d24f728e3e98e",
     "semantic_hash": ""
   },
@@ -48,44 +48,44 @@
     "semantic_hash": ""
   },
   "bin/omni-clip": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.699695,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693572,
     "ast_hash": "edf39ba9b4586d637073a930ad3c1a18",
     "semantic_hash": ""
   },
   "bin/omni-fzf": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6996977,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693598,
     "ast_hash": "87d185a4fdb06a201f88d04f6f4f117f",
     "semantic_hash": ""
   },
   "bin/omni-notify": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6997008,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693627,
     "ast_hash": "e829fe69e2a9f2d937b42b4275dcb74a",
     "semantic_hash": ""
   },
   "bin/omni-voice": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6997027,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693646,
     "ast_hash": "7b6b12364366ee1cdaac709a74f44d19",
     "semantic_hash": ""
   },
   "bin/omni-banner": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6996932,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693555,
     "ast_hash": "75a4d0bbacdcf3aa1c77b8902fe921e6",
     "semantic_hash": ""
   },
   "bin/omni-launch": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.699699,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.7693613,
     "ast_hash": "540fdcfb09359c7536ccfd5096e76f6c",
     "semantic_hash": ""
   },
   "bin/omni-mock": {
-    "mtime": 1792856988.3467913,
-    "seen": 1792857199.6996999,
+    "mtime": 1792857359.855471,
+    "seen": 1792857363.769362,
     "ast_hash": "c9e2f003b045ffd76cce659b0cac3563",
     "semantic_hash": ""
   }

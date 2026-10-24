@@ -1,17 +1,17 @@
 # Graph Report - omni-cli  (2026-10-24)
 
 ## Corpus Check
-- 15 files · ~13,227 words
+- 15 files · ~13,615 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 2, .example 1)
 
 ## Summary
-- 109 nodes · 188 edges · 12 communities (5 shown, 7 thin omitted)
+- 110 nodes · 192 edges · 12 communities (5 shown, 7 thin omitted)
 - Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `dcf0c567`
+- Built from commit: `e94a3b74`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,14 +21,13 @@
 - omni-laptop script
 - install.sh
 - omni_detect_device
-- omni-clip
 - omni-desktop script
 - omni-phone script
 - omni_render_header
 
 ## God Nodes (most connected - your core abstractions)
-1. `omni_is_online()` - 11 edges
-2. `omni_detect_device()` - 9 edges
+1. `omni_is_online()` - 12 edges
+2. `omni_detect_device()` - 10 edges
 3. `omni_run_setup()` - 7 edges
 4. `omni_render_header()` - 7 edges
 5. `omni_run_update()` - 7 edges
@@ -40,9 +39,9 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `omni script` --calls--> `omni_exec_custom()`  [EXTRACTED]
-  bin/omni → bin/omni-core.sh  _Bridges community 5 → community 2_
-- `omni script` --calls--> `omni_wake_mac()`  [EXTRACTED]
   bin/omni → bin/omni-core.sh  _Bridges community 5 → community 8_
+- `omni script` --calls--> `omni_wake_mac()`  [EXTRACTED]
+  bin/omni → bin/omni-core.sh  _Bridges community 5 → community 2_
 - `omni-clip script` --calls--> `omni_detect_device()`  [EXTRACTED]
   bin/omni-clip → bin/omni-core.sh  _Bridges community 6 → community 5_
 - `omni-desktop script` --calls--> `omni_run_setup()`  [EXTRACTED]
@@ -65,11 +64,11 @@ Nodes (9): 3-Way File Sharing, ⚙️ Configuration, Direct Shortcuts, ⚡ Highl
 
 ### Community 2 - "omni-laptop script"
 Cohesion: 0.36
-Nodes (3): omni_exec_custom(), omni_exec_custom_tool(), omni_render_custom_tools()
+Nodes (3): omni_exec_custom_tool(), omni_render_custom_tools(), omni_wake_mac()
 
 ### Community 5 - "omni_detect_device"
-Cohesion: 0.21
-Nodes (6): omni_detect_device(), omni_pair_device(), omni_run_setup(), omni_run_update(), omni_sync_menu(), omni-core.sh script
+Cohesion: 0.17
+Nodes (8): omni_detect_device(), omni_is_online(), omni_pair_device(), omni_run_setup(), omni_run_update(), omni_show_version(), omni_sync_menu(), omni-core.sh script
 
 ### Community 11 - "omni_render_header"
 Cohesion: 0.50
@@ -83,8 +82,8 @@ Nodes (5): omni_hr(), omni_menu_item(), omni_render_header(), omni_term_cols(), 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `omni_is_online()` connect `omni-clip` to `omni-core.sh`, `omni-laptop script`, `omni_detect_device`, `omni-desktop script`, `omni-phone script`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+- **Why does `omni_is_online()` connect `omni_detect_device` to `omni-core.sh`, `omni-laptop script`, `omni-clip`, `omni-desktop script`, `omni-phone script`?**
+  _High betweenness centrality (0.041) - this node is a cross-community bridge._
 - **What connects `OMNI_VERSION`, `C_RESET`, `C_BOLD` to the rest of the system?**
   _27 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `omni-core.sh` be split into smaller, more focused modules?**
