@@ -1,7 +1,14 @@
 {
   "0": "omni-core.sh",
   "1": "🌐 OMNI CLI",
-  "2": "omni_is_online",
-  "3": "omni script",
-  "4": "install.sh"
+  "2": "omni-laptop script",
+  "3": "omni-mock",
+  "4": "install.sh",
+  "5": "omni_detect_device",
+  "6": "omni-clip",
+  "7": "omni-desktop script",
+  "8": "omni-phone script",
+  "9": "omni-banner",
+  "10": "omni-launch",
+  "11": "omni_render_header"
 }
