@@ -1,7 +1,7 @@
 # 🌐 OMNI CLI
 
 > **Intelligent Multi-Device Command & Control Center**  
-> *Seamlessly bridging Linux Desktop Workstations, Arch Laptops, Windows PowerShell / WSL, and Android Termux.*
+> *Seamlessly bridging Linux Desktop Workstations, Arch Laptops, Windows PowerShell / WSL, macOS, and Android Termux.*
 
 Author: **Jordan Isaac ([@dragpk247](https://github.com/dragpk247))**  
 License: **MIT**
@@ -29,7 +29,7 @@ License: **MIT**
 
 ## 📦 Quick Installation
 
-### Linux / WSL / Android Termux
+### Linux / macOS / WSL / Android Termux
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dragpk247/omni-cli/main/install.sh | bash
 ```
