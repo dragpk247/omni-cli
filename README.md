@@ -1,7 +1,7 @@
 # 🌐 OMNI CLI
 
 > **Intelligent Multi-Device Command & Control Center**  
-> *Seamlessly bridging Linux Desktop Workstations, Arch Laptops, and Android Termux.*
+> *Seamlessly bridging Linux Desktop Workstations, Arch Laptops, Windows PowerShell / WSL, and Android Termux.*
 
 Author: **Jordan Isaac ([@dragpk247](https://github.com/dragpk247))**  
 License: **MIT**
@@ -10,13 +10,15 @@ License: **MIT**
 
 ## ⚡ Highlights
 
-- **Hardware-Aware Context Detection**: Automatically detects whether you are running on your **Desktop**, **Laptop**, or **Phone** using MAC addresses, interface IPs, and hardware properties.
+- **Hardware-Aware Context Detection**: Automatically detects whether you are running on your **Desktop**, **Laptop**, **Windows / WSL**, or **Phone** using MAC addresses, interface IPs, and hardware properties.
 - **Dedicated Device Interfaces**:
   - 📱 **Mobile Workstation (`omni-phone`)**: Touch-optimized, AI copilot, clipboard automation, battery thermal sentinel, and background wake-lock toggle.
   - 💻 **Portable Workstation (`omni-laptop`)**: Low-latency Moonlight streaming, remote desktop AI execution, and phone screen mirroring.
   - 🖥️ **Master Desktop (`omni-desktop`)**: Local AI orchestration (Antigravity, Claude Code, Aider, Jev), RTX GPU telemetry, and remote fleet management.
-- **📁 3-Way "AirDrop" Transfer (`omni send`)**: Instantly send files and folders across Desktop $\leftrightarrow$ Laptop $\leftrightarrow$ Phone over Tailscale with native push notifications.
-- **📋 Universal Clipboard Sync (`omni clip`)**: Push or pull clipboards across Wayland desktop/laptop and Android Termux.
+  - 🪟 **Native Windows PowerShell Module (`Omni.psm1`)**: Native PowerShell cmdlet dispatch (`omni`, `Send-OmniFile`, `Sync-OmniClipboard`, `Get-OmniStatus`).
+- **📁 Multi-Way "AirDrop" Transfer (`omni send`)**: Instantly send files and folders across Desktop $\leftrightarrow$ Laptop $\leftrightarrow$ Windows PC $\leftrightarrow$ Phone over Tailscale with native push notifications.
+- **📋 Universal Clipboard Sync (`omni clip`)**: Push or pull clipboards across Wayland (Linux), Windows (`Get-Clipboard` / `Set-Clipboard`), and Android Termux.
+- **🐧 Full WSL2 Integration**: Auto-detects WSL environments, bridging Windows host clipboards (`clip.exe`, `powershell.exe`) directly into Linux shells.
 - **🎙️ Voice Copilot (`omni voice`)**: Hands-free speech-to-text input with spoken audio AI responses on S24.
 - **🔔 Cross-Device Notification Relay (`omni notify`)**: Send push notifications to your phone's notification shade when long builds or AI commands finish.
 - **🔍 Fuzzy Action Launcher (`omni -f`)**: Interactive real-time search launcher for every tool and action.
@@ -27,13 +29,18 @@ License: **MIT**
 
 ## 📦 Quick Installation
 
-Run this one-liner on your **Desktop**, **Laptop**, or in **Termux on Android**:
-
+### Linux / WSL / Android Termux
 ```bash
 curl -fsSL https://raw.githubusercontent.com/dragpk247/omni-cli/main/install.sh | bash
 ```
 
-Then run the setup wizard:
+### Windows (Native PowerShell)
+Run in PowerShell (as Administrator or standard user):
+```powershell
+irm https://raw.githubusercontent.com/dragpk247/omni-cli/main/install.ps1 | iex
+```
+
+Then run the setup wizard on Linux/WSL:
 ```bash
 omni setup
 ```
