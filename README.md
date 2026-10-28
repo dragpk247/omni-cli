@@ -17,6 +17,9 @@ License: **MIT**
   - 🖥️ **Master Desktop (`omni-desktop`)**: Local AI orchestration (Antigravity, Claude Code, Aider, Jev), RTX GPU telemetry, and remote fleet management.
   - 🪟 **Native Windows PowerShell Module (`Omni.psm1`)**: Native PowerShell cmdlet dispatch (`omni`, `Send-OmniFile`, `Sync-OmniClipboard`, `Get-OmniStatus`).
 - **📁 Multi-Way "AirDrop" Transfer (`omni send`)**: Instantly send files and folders across Desktop $\leftrightarrow$ Laptop $\leftrightarrow$ Windows PC $\leftrightarrow$ Phone over Tailscale with native push notifications.
+- **⚡ Ad-Hoc Sharing to Any Device (`omni share`)**: Share files with anyone on **iOS (iPhone/iPad)**, Android, Mac, or Windows without Tailscale:
+  - Local Wi-Fi: Instant terminal QR code scanned by the iPhone Camera to download in Safari.
+  - Worldwide Public: `--public` exposes a one-time HTTPS link via Tailscale Funnel across cellular/remote networks.
 - **📋 Universal Clipboard Sync (`omni clip`)**: Push or pull clipboards across Wayland (Linux), Windows (`Get-Clipboard` / `Set-Clipboard`), and Android Termux.
 - **🐧 Full WSL2 Integration**: Auto-detects WSL environments, bridging Windows host clipboards (`clip.exe`, `powershell.exe`) directly into Linux shells.
 - **🎙️ Voice Copilot (`omni voice`)**: Hands-free speech-to-text input with spoken audio AI responses on S24.
