@@ -44,13 +44,14 @@ while true; do
   d_stat="${C_RED}down${C_RESET}"; omni_is_online "$DESKTOP_IP" && d_stat="${C_GREEN}$(omni_ts_ping "$DESKTOP_IP")${C_RESET}"
   p_stat="${C_RED}down${C_RESET}"; omni_is_online "$PHONE_IP" && p_stat="${C_GREEN}$(omni_ts_ping "$PHONE_IP")${C_RESET}"
 
-  omni_render_header "Portable Laptop ($(hostname))" "│ Desktop: $d_stat │ S24: $p_stat"
+  omni_render_header "💻 Portable Laptop ($(hostname))" "│ 🖥️  Desktop: $d_stat │ 📱 Phone: $p_stat"
 
   # ── Area 1: Desktop Workspaces & AI ──
   if [ "${OMNI_ENABLE_AI:-true}" = "true" ]; then
     echo -e "${C_CYAN}${C_BOLD}  🖥️  DESKTOP REMOTE STREAMING & WORKSPACES${C_RESET}"
     omni_menu_item "1" "🤖 Remote Antigravity" "Desktop 'ai' session"
     omni_menu_item "a" "🚀 Local Antigravity" "Local 'ai' session"
+    omni_menu_item "H" "🕊️  Hermes Agent" "Local Hermes AI chat"
     omni_menu_item "2" "🟣 Remote Claude Code" "Desktop 'claude' session"
     omni_menu_item "3" "💻 Remote Aider" "Desktop 'aider' session"
     omni_menu_item "5" "⚡ Remote Jev Chat" "Inference router"
@@ -89,6 +90,8 @@ while true; do
     omni_menu_item "u" "🎮 Desktop GPU Monitor" "nvidia-smi"
     omni_menu_item "k" "🔒 Lock Desktop Screen" "loginctl"
     omni_menu_item "P" "🔄 Push / Pull Sync" "Git & Peer sync"
+    omni_menu_item "H" "🌐 Session Handoff" "omni handoff"
+    omni_menu_item "D" "🩺 Omni Doctor" "System diagnostics"
     omni_menu_item "y" "🔄 Omni Self-Update" "omni update"
     echo ""
   fi
@@ -121,6 +124,7 @@ while true; do
       ;;
     1) ssh -o ConnectTimeout=3 -t "${DESKTOP_USER}@${DESKTOP_IP}" "/home/${DESKTOP_USER}/ap" ;;
     a|A) [ -f "$HOME/ap" ] && "$HOME/ap" || agy ;;
+    h|H) hermes chat ;;
     2) ssh -o ConnectTimeout=3 -t "${DESKTOP_USER}@${DESKTOP_IP}" "/home/${DESKTOP_USER}/.local/bin/claude-phone" ;;
     3) ssh -o ConnectTimeout=3 -t "${DESKTOP_USER}@${DESKTOP_IP}" "/home/${DESKTOP_USER}/.local/bin/aider-phone" ;;
     5) ssh -o ConnectTimeout=3 -t "${DESKTOP_USER}@${DESKTOP_IP}" "/home/${DESKTOP_USER}/.local/bin/jev-chat" ;;
@@ -163,6 +167,8 @@ while true; do
     u|U) ssh -o ConnectTimeout=3 "${DESKTOP_USER}@${DESKTOP_IP}" "nvidia-smi --query-gpu=name,utilization.gpu,memory.used,memory.total,temperature.gpu --format=csv,noheader" ;;
     k|K) ssh -o ConnectTimeout=3 "${DESKTOP_USER}@${DESKTOP_IP}" "loginctl lock-session 2>/dev/null || true" && echo -e "${C_GREEN}[✓] Desktop locked.${C_RESET}" ;;
     P) omni_sync_menu ;;
+    H) "$SCRIPT_DIR/omni-handoff" ;;
+    D) "$SCRIPT_DIR/omni-doctor" ;;
     y|Y) omni_run_update ;;
     *)
       if omni_exec_custom_tool "$choice"; then

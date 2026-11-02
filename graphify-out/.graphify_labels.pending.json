@@ -3,12 +3,14 @@
   "1": "🌐 OMNI CLI",
   "2": "omni-laptop script",
   "3": "omni-mock",
-  "4": "install.sh",
+  "4": "install.sh script",
   "5": "omni_detect_device",
   "6": "omni-clip",
   "7": "omni-desktop script",
   "8": "omni-phone script",
   "9": "omni-banner",
   "10": "omni-launch",
-  "11": "omni_render_header"
+  "11": "omni-share",
+  "12": "Omni.psm1",
+  "13": "install.ps1"
 }

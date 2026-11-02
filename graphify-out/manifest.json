@@ -1,38 +1,38 @@
 {
   "bin/omni": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.769353,
-    "ast_hash": "4ac52f81c27fcb54066392e8c98450cf",
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.200073,
+    "ast_hash": "78e798acef92be27c7b4095b3a798af4",
     "semantic_hash": ""
   },
   "bin/omni-core.sh": {
-    "mtime": 1793655572.946245,
-    "seen": 1793655592.4380457,
+    "mtime": 1793655961.1174235,
+    "seen": 1793655964.5186746,
     "ast_hash": "deec64fb7719baa7788d505cecc13647",
     "semantic_hash": ""
   },
   "bin/omni-desktop": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.769359,
-    "ast_hash": "f61d2ec370804a653c15e769a1261298",
+    "mtime": 1793656079.319794,
+    "seen": 1793656090.305006,
+    "ast_hash": "8c36db9add3783364a0bdb756f7eefb8",
     "semantic_hash": ""
   },
   "bin/omni-laptop": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693603,
-    "ast_hash": "50046a0cc9300159301727d288933d7a",
+    "mtime": 1793656079.319794,
+    "seen": 1793656090.3050082,
+    "ast_hash": "17be6fe4954575c980df1edee9013d27",
     "semantic_hash": ""
   },
   "bin/omni-phone": {
-    "mtime": 1793655572.9472451,
-    "seen": 1793655592.4380562,
-    "ast_hash": "54723bbbf7ca26b1bb7c4a858a0cce9d",
+    "mtime": 1793656079.318794,
+    "seen": 1793656090.3050122,
+    "ast_hash": "8b249e7a769539f133af620ad283ffb4",
     "semantic_hash": ""
   },
   "bin/omni-send": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693639,
-    "ast_hash": "637b5c456b118989b64d24f728e3e98e",
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.2000847,
+    "ast_hash": "c758b644217f80947f0de1c8c5b44989",
     "semantic_hash": ""
   },
   "install.sh": {
@@ -42,15 +42,15 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1792450442.993122,
-    "seen": 1792450600.288035,
-    "ast_hash": "f67ea589c7d743139a8a15fb92f6e76f",
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.200089,
+    "ast_hash": "ef2495efc01ec22fdcd69769456fbf8b",
     "semantic_hash": ""
   },
   "bin/omni-clip": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693572,
-    "ast_hash": "edf39ba9b4586d637073a930ad3c1a18",
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.200078,
+    "ast_hash": "81bb3b25d2a69ae78e9956a9f91df1ee",
     "semantic_hash": ""
   },
   "bin/omni-fzf": {
@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "bin/omni-notify": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693627,
-    "ast_hash": "e829fe69e2a9f2d937b42b4275dcb74a",
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.2000835,
+    "ast_hash": "43bb46fed524dde7a85963b409406774",
     "semantic_hash": ""
   },
   "bin/omni-voice": {
@@ -72,21 +72,39 @@
     "semantic_hash": ""
   },
   "bin/omni-banner": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693555,
-    "ast_hash": "75a4d0bbacdcf3aa1c77b8902fe921e6",
+    "mtime": 1793656079.3207939,
+    "seen": 1793656090.3050003,
+    "ast_hash": "6284476c94281a7e6d7c8ef17431e4f6",
     "semantic_hash": ""
   },
   "bin/omni-launch": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693613,
-    "ast_hash": "540fdcfb09359c7536ccfd5096e76f6c",
+    "mtime": 1793656079.3207939,
+    "seen": 1793656090.3050091,
+    "ast_hash": "36cee863f9d0a0d82fd28f447406aff6",
     "semantic_hash": ""
   },
   "bin/omni-mock": {
     "mtime": 1792857359.855471,
     "seen": 1792857363.769362,
     "ast_hash": "c9e2f003b045ffd76cce659b0cac3563",
+    "semantic_hash": ""
+  },
+  "bin/omni-share": {
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.2000854,
+    "ast_hash": "79f0fd420b0c775ad2dbe79af11339fd",
+    "semantic_hash": ""
+  },
+  "install.ps1": {
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.200087,
+    "ast_hash": "e1d65fb7b54937de4b551e95682627cc",
+    "semantic_hash": ""
+  },
+  "windows/Omni.psm1": {
+    "mtime": 1793655602.0239146,
+    "seen": 1793655602.2000883,
+    "ast_hash": "f6d48d5272cefd3cabc9d37284c4b172",
     "semantic_hash": ""
   }
 }
