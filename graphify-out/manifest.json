@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   "bin/omni-core.sh": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693584,
-    "ast_hash": "bd2d0e84ab37538c86b5c303871f6d51",
+    "mtime": 1793655572.946245,
+    "seen": 1793655592.4380457,
+    "ast_hash": "deec64fb7719baa7788d505cecc13647",
     "semantic_hash": ""
   },
   "bin/omni-desktop": {
@@ -24,9 +24,9 @@
     "semantic_hash": ""
   },
   "bin/omni-phone": {
-    "mtime": 1792857359.855471,
-    "seen": 1792857363.7693632,
-    "ast_hash": "e6c5fdf36e219cd61dbd27cf2d0b3083",
+    "mtime": 1793655572.9472451,
+    "seen": 1793655592.4380562,
+    "ast_hash": "54723bbbf7ca26b1bb7c4a858a0cce9d",
     "semantic_hash": ""
   },
   "bin/omni-send": {
