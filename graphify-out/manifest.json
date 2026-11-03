@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   "bin/omni-core.sh": {
-    "mtime": 1793655961.1174235,
-    "seen": 1793655964.5186746,
-    "ast_hash": "deec64fb7719baa7788d505cecc13647",
+    "mtime": 1793695081.14453,
+    "seen": 1793695088.483287,
+    "ast_hash": "8d3c51a870d58223248a03847651bf61",
     "semantic_hash": ""
   },
   "bin/omni-desktop": {
